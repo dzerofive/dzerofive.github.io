@@ -1,7 +1,7 @@
 body {
    font-family: Arial, Helvetica, sans-serif;
-   background-color: rgb(32, 32, 32);
-   color:whitesmoke;
+   background-color: rgb(226, 226, 226);
+   color:rgb(0, 0, 0);
    max-width: 950px;
    margin: 0 auto;
    padding: 16px;
@@ -18,8 +18,8 @@ img {
 .bindings {
    margin:0 auto;
    max-width:950px;
-   background-color: rgb(42, 68, 42);
-   color:rgb(109, 233, 109);
+   background-color: rgb(174, 194, 206);
+   color:rgb(0, 87, 138);
    line-height: 1.2;
    border-left-style:solid;
    padding:16px;
@@ -32,7 +32,7 @@ img {
 h1 {
    margin:0 auto;
    max-width:950px;
-   color:whitesmoke
+   color:rgb(0, 0, 0)
 }
 
 p {
@@ -42,8 +42,8 @@ p {
 .tldr {
    margin:0 auto;
    max-width:950px;
-   background-color: rgb(54, 54, 54);
-   color:rgb(189, 189, 189);
+   background-color: rgb(187, 187, 187);
+   color:rgb(58, 58, 58);
    line-height: 1.2;
    border-left-style: solid;
    padding: 16px;
@@ -55,8 +55,8 @@ th,td {
 }
 
 a:link {
-   color:rgb(165, 207, 193);
+   color:rgb(77, 155, 132);
 }
 a:visited{
-   color:rgb(95, 156, 156);
+   color:rgb(12, 134, 134);
 }

@@ -3,15 +3,35 @@
 
 
 <head>
-<link rel="stylesheet" href="../../css/style.css">
-<link rel="shortcut icon" type="image/webp" href="../../img/icon.webp"/>
-<title>3DCG - Управление камерой в Blender</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" type="image/webp" href="../../img/icon.webp"/>
+    <title>Управление камерой в Blender</title>
+
+    <script>
+        function toggleTheme(selectedTheme){
+            var sheets = document .getElementsByTagName('link');
+            sheets[0].href = selectedTheme;
+            localStorage.setItem('theme', selectedTheme);
+        }
+
+        function loadSavedTheme(){
+            var sheets = document .getElementsByTagName('link');
+            if (localStorage.getItem('theme') != null) {
+                sheets[0].href = localStorage.getItem('theme');
+            } else {
+                sheets[0].href = "../../css/style.css"
+            }
+        }
+    </script>
 </head>
 
 
-<body>
+<body onload="loadSavedTheme()">
+        <button onclick="toggleTheme('../../css/style_w.css')">Light</button>
+        <button onclick="toggleTheme('../../css/style.css')">Dark</button>
+
         <h1>Управление камерой в Blender</h1>
-        <div class="back"><a href="../main.html" class="back">&lt- назад</a></div>
+        <div class="back"><a href="main.html" class="back">&lt- назад</a></div>
         <hr>
 
         <div class="bindings">
@@ -51,7 +71,7 @@
 
         
         <hr>
-        <center><a href="../main.html" class="back">На главную</a></center>
+        <center><a href="main.html" class="back">На главную</a></center>
 </body>
 
 
