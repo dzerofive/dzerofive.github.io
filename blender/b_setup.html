@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="shortcut icon" type="image/webp" href="../../img/icon.webp"/>
-    <title>Загрузка, установка и настройка</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/webp" href="../img/icon.webp"/>
+    <title>Decasadnik - Blender</title>
+
     <script>
         function toggleTheme(selectedTheme){
             var sheets = document .getElementsByTagName('link');
             sheets[0].href = selectedTheme;
-            localStorage.setItem('theme', selectedTheme);
+            localStorage.setItem('theme_blend', selectedTheme);
         }
 
         function loadSavedTheme(){
             var sheets = document .getElementsByTagName('link');
-            if (localStorage.getItem('theme') != null) {
-                sheets[0].href = localStorage.getItem('theme');
+            if (localStorage.getItem('theme_blend') != null) {
+                sheets[0].href = localStorage.getItem('theme_blend');
             } else {
-                sheets[0].href = "../../css/style.css"
+                sheets[0].href = "../css/style.css"
             }
         }
+        
     </script>
+
+    <ul class = "nav_bar">
+        <li class = "theme_button"><button onclick="toggleTheme('../css/style_w.css')">Light</button></li>
+        <li class = "theme_button"><button onclick="toggleTheme('../css/style.css')">Dark</button></li>
+    </ul>
 </head>
 
-
 <body onload="loadSavedTheme()">
-        <button onclick="toggleTheme('../../css/style_w.css')">Light</button>
-        <button onclick="toggleTheme('../../css/style.css')">Dark</button>
     
         <h1>Загрузка, установка и настройка</h1>
         <div class="back"><a href="main.html" class="back">&lt- назад</a></div>
         <hr>
 
         <picture>
-            <img src="../../img/blender_main.jpg" alt="Главная страница Blender.org на момент 10го Сентября 2021">
+            <img src="../img/blender_main.jpg" alt="Главная страница Blender.org на момент 10го Сентября 2021">
         </picture>
 
         <p>Скачать Blender для всех ОС можно на сайте <a href="https://www.blender.org/download/">Blender.org/Download/</a>, или при помощи Package Manager-а ОС:</p>

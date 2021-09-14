@@ -5,7 +5,38 @@ body {
    max-width: 950px;
    margin: 0 auto;
    padding: 16px;
+
+   background-image: url(../img/pattern_01.png);
+   background-repeat: repeat;
 }
+
+.nav_bar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+.theme_button {
+   float: right;
+   display: inline;
+}
+.nav_button {
+   float: left;
+   display: inline;
+}
+
+button {
+   background-color: rgb(29, 29, 29);
+   border: none;
+   color: whitesmoke;
+   padding: 8px 16px;
+   text-align: center;
+   display: inline-block;
+   font-size: 14px;
+   transition-duration: 0.1s;
+ }
+ button:hover {
+   background-color: rgb(14, 14, 14);
+ }
 
 .wip {
    color:brown
