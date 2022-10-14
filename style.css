@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    font-family: Lato, sans-serif;
+    margin: 1rem;
+}
+p {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #ccc;
+    border-radius: .25rem;
+}
+
+#map { height: 700px; }
