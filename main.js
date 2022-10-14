@@ -44,7 +44,7 @@ function onMapClick(e) {
   points.push(e.latlng);
   polyg = L.polygon(points).addTo(map);
 
-  display_points.push('[' + e.latlng.lat + ',' + e.latlng.lng + ']');
+  display_points.push('[' + e.latlng.lng + ',' + e.latlng.lat + ']');
   point_p.innerText = display_points;
 }
 map.on('click', onMapClick);
